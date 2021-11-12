@@ -1,9 +1,9 @@
 # Quick-Spawn
 
-> [中文](./doc/readme_cn.md)  
-> ChangeLog: [English](./doc/changeLog_en.md) | [中文](./doc/changeLog_cn.md)
+> [English](../README.md)  
+> ChangeLog: [English](./changeLog_en.md) | [中文](./changeLog_cn.md)
 ## API
-You can use this lib just like below:
+使用方法参见下方代码段：
 ```
   import {quickSpawn,quickSpawnPromise} in 'quick-spawn';
   //  or const {quickSpawn,quickSpawnPromise} =require('quick-spawn');
@@ -21,16 +21,16 @@ You can use this lib just like below:
 ```
 
 ### Command Line
-such a string that be executable in terminal or cmd window
+在命令行工具或终端中执行的 __字符串__
 
 ### params (optional)
-Array，which are transfer to program that declared in command line
+__数组__，用于命令参数的传递
 
 ### opts (optional)
-Object, declare some parameters for spawn process:
+对象，用于传递spawn执行时的一些控制变量。
 ```
-silent:  default is false, control whether the output info will be print on the default output stream
-... : other configuration in child_process.spawn
+silent:  默认为 false ，用于关闭命令执行时输出到默认窗体的行为  
+... : 其他 child_process.spawn 中的配置。
 ```
 
 ### callback
@@ -41,7 +41,7 @@ function(err,stdout,stderr){
 ```
 
 
-## Thank you for these package authors:
+## 感谢以下包的作者:
 [easy-spawn](https://github.com/ddliu/node-easy-spawn)  
 [create-spawn](https://github.com/nneutrinno/create-spawn)  
 [exec-sh](https://github.com/tsertkov/exec-sh)
