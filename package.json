@@ -1,6 +1,6 @@
 {
   "name": "quick-spawn",
-  "version": "0.2.0",
+  "version": "0.1.1",
   "description": "call a child_process.spawn through a simple way",
   "main": "lib/quick-spawn.js",
   "scripts": {
